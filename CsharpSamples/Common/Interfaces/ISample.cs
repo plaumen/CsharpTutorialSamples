@@ -1,4 +1,4 @@
-﻿namespace CsharpSamples.Common
+﻿namespace CsharpSamples.Common.Interfaces
 {
     interface ISample
     {
