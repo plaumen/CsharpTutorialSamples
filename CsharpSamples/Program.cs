@@ -1,5 +1,5 @@
 ﻿using CsharpSamples.Common.Interfaces;
-using CsharpSamples.Samples.Basics.Logic;
+using CsharpSamples.Samples.Basics.Loops;
 using System;
 
 namespace CsharpSamples
@@ -8,7 +8,7 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new SwitchSample();
+            ISample sample = new LoopsBreakingSample();
             sample.Run();
 
             Console.ReadLine();
