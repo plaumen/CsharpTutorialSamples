@@ -1,5 +1,5 @@
 ﻿using CsharpSamples.Common.Interfaces;
-using CsharpSamples.Samples.Basics.Exceptions;
+using CsharpSamples.Samples.Basics.Delegates;
 using System;
 
 namespace CsharpSamples
@@ -8,7 +8,7 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new ExceptionsSample();
+            ISample sample = new PredicateSample();
             sample.Run();
 
             Console.ReadLine();
