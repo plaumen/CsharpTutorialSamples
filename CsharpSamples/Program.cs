@@ -8,7 +8,7 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new PredicateSample();
+            ISample sample = new LambdaSample();
             sample.Run();
 
             Console.ReadLine();
