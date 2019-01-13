@@ -1,5 +1,5 @@
 ﻿using CsharpSamples.Common.Interfaces;
-using CsharpSamples.Samples.Basics.Collections;
+using CsharpSamples.Samples.Basics.Linq;
 using System;
 
 namespace CsharpSamples
@@ -8,7 +8,7 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new QueueSample();
+            ISample sample = new CountAndAnySample();
             sample.Run();
 
             Console.ReadLine();
