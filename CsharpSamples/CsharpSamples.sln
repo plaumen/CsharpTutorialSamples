@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpSamples", "CsharpSamples.csproj", "{1C8823E5-ECB8-4C65-AFCA-6E9487F11EFB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsharpSamples.Logger", "..\CsharpSamples.Logger\CsharpSamples.Logger.csproj", "{46740373-FD64-47E6-AA0A-AC8B92D63913}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1C8823E5-ECB8-4C65-AFCA-6E9487F11EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C8823E5-ECB8-4C65-AFCA-6E9487F11EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C8823E5-ECB8-4C65-AFCA-6E9487F11EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46740373-FD64-47E6-AA0A-AC8B92D63913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46740373-FD64-47E6-AA0A-AC8B92D63913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46740373-FD64-47E6-AA0A-AC8B92D63913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46740373-FD64-47E6-AA0A-AC8B92D63913}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
