@@ -1,6 +1,7 @@
-﻿using CsharpSamples.Common.Interfaces;
-using CsharpSamples.Samples.Basics.ExtensionMethods;
-using System;
+﻿using System;
+using TestManager.Enums;
+using TestManager.Interfaces;
+using TestManager.Tests;
 
 namespace CsharpSamples
 {
@@ -8,8 +9,8 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new ExtensionsSample();
-            sample.Run();
+            ITest testToRun = TestsFactory.Get(TestType.DeviceTest);
+            testToRun.Run();
 
             Console.ReadLine();
         }

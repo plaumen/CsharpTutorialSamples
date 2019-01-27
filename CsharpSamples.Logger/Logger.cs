@@ -1,13 +1,12 @@
-﻿using System;
+﻿using CsharpSamples.Logger.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using CsharpSamples.Logger.Interfaces;
 
 namespace CsharpSamples.Logger
 {
-    public  class Logger : ILogger
+    public class Logger : ILogger
     {
-        private  List<Message> _messages = new List<Message>();
+        private List<Message> _messages = new List<Message>();
 
         public void AddMessage(Message message)
         {
@@ -18,7 +17,7 @@ namespace CsharpSamples.Logger
         {
             foreach (var message in _messages)
             {
-                Console.WriteLine($"{message.Type} {message.Context} {message.Context}".Trim());
+                Console.WriteLine($"{message.Type} {message.Text} {message.Context}".Trim());
             }
         }
 
