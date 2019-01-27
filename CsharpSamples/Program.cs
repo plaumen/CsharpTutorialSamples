@@ -1,5 +1,5 @@
 ﻿using CsharpSamples.Common.Interfaces;
-using CsharpSamples.Samples.Basics.ExtensionMethods;
+using CsharpSamples.Samples.Basics.Serialization;
 using System;
 
 namespace CsharpSamples
@@ -8,7 +8,7 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new ExtensionsSample();
+            ISample sample = new SerializationSample();
             sample.Run();
 
             Console.ReadLine();
