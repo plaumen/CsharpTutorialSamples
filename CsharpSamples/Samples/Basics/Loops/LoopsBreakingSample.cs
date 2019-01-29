@@ -25,7 +25,6 @@ namespace CsharpSamples.Samples.Basics.Loops
             // Continue to next item
             // Num is 6
             // Num is 7
-
         }
 
         void foreachBreak(int[] numbers)
@@ -39,7 +38,6 @@ namespace CsharpSamples.Samples.Basics.Loops
                 }
 
                 Console.WriteLine($"Num is {num}");
-
             }
         }
 

@@ -28,7 +28,6 @@ namespace CsharpSamples.Samples.Basics.Loops
 
     public class MyNumber
     {
-
         public int Value;
     }
 }

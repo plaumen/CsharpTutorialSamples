@@ -1,5 +1,6 @@
 ﻿using CsharpSamples.Common.Interfaces;
 using CsharpSamples.Samples.Basics.Serialization.Models;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
@@ -27,7 +28,11 @@ namespace CsharpSamples.Samples.Basics.Serialization
             System.Console.WriteLine(serializedXmlContent);
             memoryStream.Close();
 
-            // OUTPUT
+            var jsonSerializedBlog = JsonConvert.SerializeObject(blog);
+
+            System.Console.WriteLine(jsonSerializedBlog);
+
+            // OUTPUT XML
             // <?xml version="1.0"?>
             // <Blog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             //   <Name>World blog!</Name>
@@ -50,6 +55,31 @@ namespace CsharpSamples.Samples.Basics.Serialization
             //     </Post>
             //   </Posts>
             // </Blog>
+
+            // OUTPUT JSON
+            // {
+            //    "Name": "World blog!",
+            //    "Posts": [
+            //        {
+            //            "CreationDateTime": "2019-01-29T17:58:27.9124154+01:00",
+            //            "Author": {
+            //                "Name": "Patio",
+            //                "Surname": "Sutenero"
+            //            },
+            //            "Content": "Lorem ipsum...",
+            //            "Title": "About animals"
+            //        },
+            //        {
+            //            "CreationDateTime": "2019-01-29T17:58:27.9153015+01:00",
+            //            "Author": {
+            //                "Name": "Patio",
+            //                "Surname": "Sutenero"
+            //            },
+            //            "Content": "Lorem ipsum...",
+            //            "Title": "About plants"
+            //        }
+            //    ]
+            //}
         }
     }
 }

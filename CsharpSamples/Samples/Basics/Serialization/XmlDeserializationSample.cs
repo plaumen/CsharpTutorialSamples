@@ -6,11 +6,11 @@ using System.Xml.Serialization;
 
 namespace CsharpSamples.Samples.Basics.Serialization
 {
-    public class DeserializationSample : ISample
+    public class XmlDeserializationSample : ISample
     {
         public void Run()
         {
-            var serializedBlog = @"<?xml version=""1.0""?>
+            var xmlSerializedBlog = @"<?xml version=""1.0""?>
 <Blog xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
   <Name>World blog!</Name>
   <Posts>
@@ -36,7 +36,7 @@ namespace CsharpSamples.Samples.Basics.Serialization
             var xmlSerializer = new XmlSerializer(typeof(Blog));
             var memoryStream = new MemoryStream();
             var streamWriter = new StreamWriter(memoryStream);
-            streamWriter.Write(serializedBlog);
+            streamWriter.Write(xmlSerializedBlog);
             streamWriter.Flush();
             memoryStream.Position = 0;
             var blog = (Blog)xmlSerializer.Deserialize(memoryStream);

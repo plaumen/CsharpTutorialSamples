@@ -1,5 +1,5 @@
 ﻿using CsharpSamples.Common.Interfaces;
-using CsharpSamples.Samples.Basics.Serialization;
+using CsharpSamples.Samples.Basics.Files;
 using System;
 
 namespace CsharpSamples
@@ -8,7 +8,7 @@ namespace CsharpSamples
     {
         static void Main(string[] args)
         {
-            ISample sample = new SerializationSample();
+            ISample sample = new FileSample();
             sample.Run();
 
             Console.ReadLine();

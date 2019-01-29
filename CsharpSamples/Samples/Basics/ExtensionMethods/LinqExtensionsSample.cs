@@ -50,6 +50,4 @@ namespace CsharpSamples.Samples.Basics.ExtensionMethods
             return enumerable.ElementAt(1);
         }
     }
-
-
 }

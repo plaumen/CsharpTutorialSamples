@@ -48,6 +48,4 @@ namespace CsharpSamples.Samples.Basics.Functions
             Console.WriteLine($"Additional info is {additionalInfo}");
         }
     }
-
-
 }
