@@ -28,9 +28,23 @@ namespace CsharpSamples.Samples.Intermediate.Type
             Console.WriteLine($"Is derived class of Base type? {(derivedClassInstance is Base)}.");
             Console.WriteLine($"Is base class of Derived type? {(baseClassInstance is Derived)}.");
 
+            // variable declaration in if
             if (derivedClassInstance is Base b)
             {
                 System.Console.WriteLine($"Yeah! I can use variable b here {b.GetType()}");
+            }
+
+            // variable declaration in switch case
+            switch (baseClassInstance)
+            {
+                case Derived derivedType:
+                    Console.Write(derivedType);
+                    break;
+                case Base baseType:
+                    System.Console.WriteLine(baseType);
+                    break;
+                default:
+                    break;
             }
 
             // code below will not work because is operator does not support implicit and explicit conversions
@@ -43,7 +57,7 @@ namespace CsharpSamples.Samples.Intermediate.Type
 
             if (another != null)
             {
-                System.Console.WriteLine("Anoter object extists");
+                System.Console.WriteLine("Anoter object exists");
             }
 
             // OUTPUT:
@@ -51,7 +65,9 @@ namespace CsharpSamples.Samples.Intermediate.Type
             // Is derived class of Base type? True.
             // Is base class of Derived type? False.
             // Yeah! I can use variable b here CsharpSamples.Samples.Intermediate.Type.IsOperatorSample+Derived
-            // Anoter object extists
+            // CsharpSamples.Samples.Intermediate.Type.IsOperatorSample+Base
+            // Anoter object exists
+
         }
     }
 }
