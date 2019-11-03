@@ -13,7 +13,7 @@ namespace CsharpSamples.Samples.Basics.RegularExpressions
 
             var exceptions = Regex.Matches(exceptionsStory, @"(?'exceptionName'\w+Exception)").Select(m => m.Groups["exceptionName"].Value);
 
-            System.Console.WriteLine($"I found following exceptions in the story:\n{string.Join('\n', exceptions)}");
+            System.Console.WriteLine($"I found following exceptions in the story:\n{string.Join("\n", exceptions)}");
 
             // OUTPUT
             // I found following exceptions in the story:

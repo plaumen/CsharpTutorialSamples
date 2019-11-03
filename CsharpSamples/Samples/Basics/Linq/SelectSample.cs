@@ -9,7 +9,7 @@ namespace CsharpSamples.Samples.Basics.Linq
         {
             var persons = PersonRepository.Get(10);
             var personsAges = persons.Select(p => p.Age);
-            System.Console.WriteLine($"Persons ages are {string.Join(',', personsAges)}");
+            System.Console.WriteLine($"Persons ages are {string.Join(",", personsAges)}");
 
             // declaration of anonysmous type
             var namesAgesList = persons.Select(p => new { Name = p.Name, Age = p.Age }).ToList();

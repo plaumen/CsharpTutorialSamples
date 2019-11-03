@@ -15,7 +15,7 @@ namespace CsharpSamples.Samples.Basics.Linq
             foreach (var personsByName in personsGroupedByName)
             {
                 Console.WriteLine($"There are {personsByName.Count()} persons with name {personsByName.Key}. " +
-                    $"They are in following ages: {string.Join(',', personsByName.Select(p => p.Age))}");
+                    $"They are in following ages: {string.Join(",", personsByName.Select(p => p.Age))}");
             }
 
             // SAMPLE OUPTUT

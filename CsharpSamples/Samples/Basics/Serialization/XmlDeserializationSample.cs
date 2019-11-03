@@ -43,7 +43,7 @@ namespace CsharpSamples.Samples.Basics.Serialization
             memoryStream.Close();
 
             System.Console.WriteLine($"Blog name is {blog.Name}" +
-                $"\nPosts have titles:\n{string.Join('\n', blog.Posts.Select(p => p.Title))}");
+                $"\nPosts have titles:\n{string.Join("\n", blog.Posts.Select(p => p.Title))}");
 
             // OUTPUT
             // Blog name is World blog!

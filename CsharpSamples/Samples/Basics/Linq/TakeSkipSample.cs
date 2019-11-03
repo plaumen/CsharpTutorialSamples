@@ -16,7 +16,7 @@ namespace CsharpSamples.Samples.Basics.Linq
             // OUTPUT
             // Taken numbers: 0,1,2,3,4
 
-            Console.WriteLine($"Taken numbers: {string.Join(',', takenNumbers)}");
+            Console.WriteLine($"Taken numbers: {string.Join(",", takenNumbers)}");
 
             numbers = getNumbers(12);
             var chunkSize = 4;
@@ -24,7 +24,7 @@ namespace CsharpSamples.Samples.Basics.Linq
             for (int chunkIndex = 0; chunkIndex < chunksCount; chunkIndex++)
             {
                 var chunk = numbers.Skip(chunkIndex * chunkSize).Take(chunkSize);
-                Console.WriteLine($"Chunk {chunkIndex + 1}: {string.Join(',', chunk)}");
+                Console.WriteLine($"Chunk {chunkIndex + 1}: {string.Join(",", chunk)}");
             }
 
             // OUTPUT
